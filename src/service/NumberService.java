@@ -40,6 +40,8 @@ public class NumberService {
             sum[0] = sum[0] + number;
         });
 
+        stringStream.close();
+
         Collections.sort(integers);
         getMedian(integers, resultDouble);
         getAvr(integers, resultDouble, sum);
