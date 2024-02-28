@@ -78,7 +78,7 @@ public class NumberService {
         int size = integers.size();
         int half = size / 2;
         if (size % 2 == 0) {
-            resultDouble[0] = (integers.get(half) + integers.get(half + 1) / 2.0);
+            resultDouble[0] = (integers.get(half) + integers.get(half - 1)) / 2.0;
         } else {
             resultDouble[0] = integers.get(half);
         }
