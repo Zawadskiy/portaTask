@@ -76,6 +76,11 @@ public class NumberService {
      */
     private void getMedian(List<Integer> integers, double[] resultDouble) {
         int size = integers.size();
+
+        if(size == 0) {
+            throw new RuntimeException("Empty collection/file");
+        }
+
         int half = size / 2;
         if (size % 2 == 0) {
             resultDouble[0] = (integers.get(half) + integers.get(half - 1)) / 2.0;
