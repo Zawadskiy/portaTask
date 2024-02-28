@@ -104,7 +104,7 @@ public class NumberService {
             return;
         }
 
-        if (number >= seqData[0]) {
+        if (number > seqData[0]) {
             seqData[1] = seqData[1] + 1;
         } else {
             if (seqData[1] > resultInt[2]) {
@@ -113,7 +113,7 @@ public class NumberService {
             seqData[1] = 1;
         }
 
-        if (number <= seqData[0]) {
+        if (number < seqData[0]) {
             seqData[2] = seqData[2] + 1;
         } else {
             if (seqData[2] > resultInt[3]) {
